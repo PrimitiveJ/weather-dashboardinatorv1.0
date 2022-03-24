@@ -1,0 +1,30 @@
+header {
+    display:flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 89, 255), rgb(190, 187, 206));
+    color:whitesmoke;
+}
+
+.formh2 {
+    display:flex;
+    justify-content: center;
+}
+
+.btncontainer {
+    display:flex;
+    justify-content: center;
+}
+
+.form-group label {
+    display:flex;
+    justify-content: center;
+}
+
+.card {
+ margin-top: 20px;
+}
+
+.card h3 {
+    display:flex;
+    justify-content: center;
+}

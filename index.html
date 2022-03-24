@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets\css\style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="input-output-container">
+            <div class="row">
+                <div class = "col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <h2 class="formh2">Search for a City</h2>
+                        <label for="usr">City:</label>
+                        <input type="text" class="form-control" id="usr"> 
+                    </div>
+                    <div class="btncontainer">  
+                        <button type="button" class="btn btn-primary" id="btn">Search</button> 
+                    </div>    
+                </div>
+                <div class = "col-sm-8 col-md-8 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class = "container">
+                                <table class="table table-bordered">
+                                    <thead class = "table-dark">
+                                    <tr>
+                                        <th scope ="col">City</th>
+                                        <th scope="col">Clouds</th>
+                                        <th scope="col">Longitude</th>
+                                        <th scope="col">Latitude</th>
+                                        <th scope="col">Icon</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="table_body">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class = "container">
+                                <table class="table table-bordered">
+                                    <thead class = "table-dark">
+                                    <tr>
+                                        <th scope ="col">date1</th>
+                                        <th scope="col">date2</th>
+                                        <th scope="col">date3</th>
+                                        <th scope="col">date4</th>
+                                        <th scope="col">date5</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="table_body2">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class = "card">
+                        <h3>Past Searches</h3>
+                        <ol class="pastsearchescont"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets\js\script.js"></script>   
+</body>
+</html>
