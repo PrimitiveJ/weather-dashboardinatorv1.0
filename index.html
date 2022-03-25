@@ -36,23 +36,33 @@
                     </div>
                     <div class="btncontainer">  
                         <button type="button" class="btn btn-primary" id="btn">Search</button> 
-                    </div>    
+                    </div>  
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class = "card">
+                            <h3>Past Searches</h3>
+                            <ol class="pastsearchescont" id ="pastsearchescont">
+                                
+                            </ol>
+                        </div>
+                    </div>  
                 </div>
                 <div class = "col-sm-8 col-md-8 col-lg-8">
                     <div class="row">
                         <div class="col-sm-8 col-md-8 col-lg-8">
                             <div class = "container">
+                                <h2><div class="todaysdate">Right Now:</div>
                                 <table class="table table-bordered">
                                     <thead class = "table-dark">
-                                    <tr>
-                                        <th scope ="col">City</th>
-                                        <th scope="col">Clouds</th>
-                                        <th scope="col">Longitude</th>
-                                        <th scope="col">Latitude</th>
+                                    <tr>    
+                                        <th scope="col">City</th>
+                                        <th scope ="col">Temperature(Farenheit)</th>
+                                        <th scope="col">Wind(MPH)</th>
+                                        <th scope="col">Humidity</th>
                                         <th scope="col">Icon</th>
+                                    </h2>
                                     </tr>
                                     </thead>
-                                    <tbody id="table_body">
+                                    <tbody class ="tablebody" id="table_body">
                                     </tbody>
                                 </table>
                             </div>
@@ -61,32 +71,30 @@
                     <div class="row">
                         <div class="col-sm-8 col-md-8 col-lg-8">
                             <div class = "container">
+                                <h5>5 Day Forecast:
                                 <table class="table table-bordered">
                                     <thead class = "table-dark">
                                     <tr>
-                                        <th scope ="col">date1</th>
-                                        <th scope="col">date2</th>
-                                        <th scope="col">date3</th>
-                                        <th scope="col">date4</th>
-                                        <th scope="col">date5</th>
+                                        <th scope ="col"><div class="todaysdate2">Today</div></th>
+                                        <th scope="col"><div class="date2">date2</div></th>
+                                        <th scope="col"><div class="date3">date3</div></th>
+                                        <th scope="col"><div class="date4">date4</div></th>
+                                        <th scope="col"><div class="date5">date5</div></th>
+                                    </h5>
                                     </tr>
                                     </thead>
-                                    <tbody id="table_body2">
+                                    <tbody class="tablebody" id="table_body2">
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
+               
             </div>
             
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <div class = "card">
-                        <h3>Past Searches</h3>
-                        <ol class="pastsearchescont"></ol>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
