@@ -1,5 +1,5 @@
 body {
-    background-image:repeating-radial-gradient(slategrey, lightblue);
+    background-image:repeating-radial-gradient(slategrey, rgb(16, 182, 238));
 }
 
 header {

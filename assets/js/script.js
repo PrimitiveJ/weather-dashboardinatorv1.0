@@ -1,3 +1,4 @@
+//get elements from HTML
 let userInput = document.querySelector(".form-control")
 let tableBody = document.querySelector("#table_body")
 let tableBody2 = document.querySelector("#table_body2")
@@ -11,6 +12,7 @@ let date4El = document.querySelector(".date4")
 let date5El = document.querySelector(".date5")
 let d = new Date();
 
+//Function that runs on window load, updating the date.
 window.onload = function dateUpdate(){
 todaysdateEl.innerHTML = "(Today)" + d.toUTCString();
 todaysdateEl2.innerHTML= "(Today)" + d.toDateString();
@@ -20,7 +22,7 @@ date4El.textContent= d.toDateString(d.setDate(d.getDate()+1));
 date5El.textContent= d.toDateString(d.setDate(d.getDate()+1));
 }
 
-
+//Event handler that calls functions that get weather and handles errors
 let eventHandler = function(event) {
     // prevent page from refreshing
     event.preventDefault();
@@ -81,7 +83,7 @@ else {
     
 
 };
-
+//handler for when user clicks search button or on a past-searched city. Calls getweather functions on past cities. 
 let buttonClickHandler = function(event) {
     // get the pastcity attribute from the clicked element
     
@@ -101,6 +103,7 @@ let buttonClickHandler = function(event) {
     
   };
 //   https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+//Function that calls the open weather API to get daily weather and longitude and latitude to pipe into the one call API. Appends data to HTML.
 function getcurrentWeather(city){
     //format API URL
     let apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q='+ city + '&APPID=19eecb01033710945577be8f1d9f7976&units=imperial'
@@ -125,7 +128,7 @@ function getcurrentWeather(city){
     </tr>`;
     
            document.getElementById("table_body").innerHTML = tableData;
-
+//Second API call, to happen once the first has completed and given us the latitude/longitude. Used for 5 day forecast. Appends to HTML. 
            let onecallUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" +cityLat + "&lon=" + cityLon + "&APPID=19eecb01033710945577be8f1d9f7976&units=imperial"
 fetch(onecallUrl).then((data2)=>{
     //  console.log(data2) 
@@ -154,7 +157,7 @@ fetch(onecallUrl).then((data2)=>{
         
         
     </tr>`;
-   
+    //Logic to adjust coloring of UV index.
            document.getElementById("table_body2").innerHTML = tableData;
            //console.log(objectData2.daily[0].uvi)
             if (objectData2.daily[0].uvi < 3 ) {
