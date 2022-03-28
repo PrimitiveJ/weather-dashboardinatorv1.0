@@ -7,7 +7,7 @@ A simple weather dashboard.
 -Storage of past results (must search initial result first)
 
 #Released: March 2022
-#Developed by : James L Primitive
+#Developed by : James L Primitive AKA Christopher James Hoke
 
 ![Image of Weather Dashboard](https://github.com/PrimitiveJ/weather-dashboardinatorv1.0/blob/main/assets/images/Weatherdash.jpg)
 
